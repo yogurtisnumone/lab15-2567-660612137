@@ -99,9 +99,9 @@ export default function Home() {
     //TIP : get value of currently filled form with variable "form.values"
 
     if (form.values.plan === "funrun") price = 500;
-    else if (form.values.plan === "mini") price = 1000;
-    else if (form.values.plan === "half") price = 1500;
-    else if (form.values.plan === "full") price = 2000;
+    else if (form.values.plan === "mini") price = 800;
+    else if (form.values.plan === "half") price = 1200;
+    else if (form.values.plan === "full") price = 1500;
     //check the rest plans by yourself
     //TIP : check /src/app/libs/runningPlans.js
 
