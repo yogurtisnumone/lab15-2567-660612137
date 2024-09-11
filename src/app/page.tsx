@@ -58,10 +58,7 @@ const schema = z
       .max(12, { message: "Password must not exceed 12 characters" } ),
   })
 
-  .refine((data) => data.password === data.confirmPassword, {
-    message: "Passwords don't match",
-    path: ["confirmPassword"],
-  })
+  
   .refine(
     //refine allows you check error in your own way
     //in this example, we check "hasCoupon" with "coupon" fields
