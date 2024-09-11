@@ -146,10 +146,12 @@ export default function Home() {
               label="Password"
               description="Password must contain 6 - 12 characters"
               {...form.getInputProps("password")}
+              error={form.errors.password}
             />
             <PasswordInput
               label="Confirm Password"
               {...form.getInputProps("confirmPassword")}
+              error={form.errors.confirmPassword}
             />
 
             <Select
