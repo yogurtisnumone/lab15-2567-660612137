@@ -99,12 +99,18 @@ export default function Home() {
     //TIP : get value of currently filled form with variable "form.values"
 
     if (form.values.plan === "funrun") price = 500;
+    else if (form.values.plan === "mini") price = 1000;
+    else if (form.values.plan === "half") price = 1500;
+    else if (form.values.plan === "full") price = 2000;
     //check the rest plans by yourself
     //TIP : check /src/app/libs/runningPlans.js
 
     //check discount here
-
+    if (form.values.hasCoupon && form.values.coupon === "CMU2023") {
+      price = price * 0.7;
+    }
     return price;
+    
   };
 
   return (
